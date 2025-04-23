@@ -5,7 +5,7 @@ const remove = async () => {
 	const pathName = join(import.meta.dirname, 'files', 'fileToRemove.txt');
 	try {
 		await rm(pathName);
-	} catch (error) {
+	} catch {
 		console.error('FS operation failed');
 	}
 };
